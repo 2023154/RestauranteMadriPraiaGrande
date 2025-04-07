@@ -41,3 +41,22 @@ nav a {
 nav a:hover {
     color: #fdd835;
 }
+
+#image-slider {
+    position: relative;
+    max-width: 800px;
+    margin: 30px auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    height: 500px;
+}
+
+.slide-image {
+    width: 100%;
+    display: none;
+}
+
+.slide-image.active {
+    display: block;
+}
