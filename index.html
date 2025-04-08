@@ -1,53 +1,87 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Madri Restaurante</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="Restaurante | MADRI PRAIA GRANDE">
+  <meta property="og:description" content="Comida fresca feita na hora">
+  <meta property="og:image" content="https://github.com/2023154/Madri-Restaurante/blob/main/restauranteCapa.png?raw=true">
+  <meta property="og:url" content="https://2023154.github.io">
+  <meta name="twitter:card" content="summary_large_image">  <title>Madri Restaurante</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="index.css">
-
 </head>
 <body>
 
 <header>
   <h1>Madri Restaurante</h1>
-  <p>Comida Brasileira de Verdade</p>
+  <p>Sabor brasileiro com alma</p>
 </header>
 
 <nav>
-  <a href="#slider">Pratos em Destaque</a>
+  <a href="#slider">Destaques</a>
   <a href="#menu">Cardápio</a>
   <a href="#footer">Contato</a>
 </nav>
 
-<section id="slider">
-  <div id="image-slider">
-    <img class="slide-image active" src="dobradinha.jpeg" alt="Prato 1">
-    <img class="slide-image" src="feijoada.jpg" alt="Prato 2">
-    <img class="slide-image" src="pasta.jpg" alt="Prato 3">
-    <img class="slide-image " src="peixe.jpg" alt="Prato 4">
-    <img class="slide-image" src="viradaPau.png" alt="Prato 5">
-    <button class="slider-btn" id="prev-btn">&#10094;</button>
-    <button class="slider-btn" id="next-btn">&#10095;</button>
-  </div>
-</section>
+<main>
+  <section id="slider">
+    <div id="image-slider">
+      <img class="slide-image active" src="dobradinha.jpeg" alt="Prato de Dobradinha">
+      <img class="slide-image" src="feijoada.jpg" alt="Prato de Feijoada">
+      <img class="slide-image" src="pasta.jpg" alt="Massa artesanal">
+      <img class="slide-image" src="peixe.jpg" alt="Peixe grelhado">
+      <img class="slide-image" src="viradaPau.png" alt="Virado à Paulista">
+      <button class="slider-btn" id="prev-btn">&#10094;</button>
+      <button class="slider-btn" id="next-btn">&#10095;</button>
+    </div>
+  </section>
 
-<section class="hours">
-  <h2>Opening Hours</h2>
-  <div class="hours-grid">
-    <div><strong>Monday:</strong> 10:00 – 19:00</div>
-    <div><strong>Tuesday:</strong> 10:00 – 19:00</div>
-    <div><strong>Wednesday:</strong> 10:00 – 19:00</div>
-    <div><strong>Thursday:</strong> 10:00 – 19:00</div>
-    <div><strong>Friday:</strong> 10:00 – 19:00</div>
-    <div><strong>Saturday:</strong> 09:00 – 18:00</div>
-    <div><strong>Sunday:</strong> 10:00 - 17:00</div>
-  </div>
-</section>
+  <section class="hours">
+    <h2>Horário de Funcionamento</h2>
+    <div class="hours-grid">
+      <div><strong>Segunda:</strong> 10h – 19h</div>
+      <div><strong>Terça:</strong> 10h – 19h</div>
+      <div><strong>Quarta:</strong> 10h – 19h</div>
+      <div><strong>Quinta:</strong> 10h – 19h</div>
+      <div><strong>Sexta:</strong> 10h – 19h</div>
+      <div><strong>Sábado:</strong> 9h – 18h</div>
+      <div><strong>Domingo:</strong> 10h – 17h</div>
+    </div>
+  </section>
 
+  <section id="menu" class="menu-section">
+    <h2>Nosso Cardápio</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <img src="feijoada.jpg" alt="Feijoada completa">
+        <h3>Feijoada Completa</h3>
+        <p>Clássica, com carnes selecionadas e acompanhamentos.</p>
+        <span>R$ 39,90</span>
+      </div>
+      <div class="menu-item">
+        <img src="peixe.jpg" alt="Peixe grelhado">
+        <h3>Peixe Grelhado</h3>
+        <p>Filé de peixe com legumes na manteiga de ervas.</p>
+        <span>R$ 34,00</span>
+      </div>
+      <div class="menu-item">
+        <img src="pasta.jpg" alt="Massa artesanal">
+        <h3>Massa Artesanal</h3>
+        <p>Tagliatelle fresco com molho de tomate italiano.</p>
+        <span>R$ 29,90</span>
+      </div>
+      <div class="menu-item">
+        <img src="viradaPau.png" alt="Virado à Paulista">
+        <h3>Virado à Paulista</h3>
+        <p>Tradicional, com tutu, arroz, couve, banana e ovo.</p>
+        <span>R$ 36,50</span>
+      </div>
+    </div>
+  </section>
 
+</main>
 
 <footer class="site-footer" id="footer">
   <div class="footer-container">
@@ -61,8 +95,6 @@
   </div>
 </footer>
 
-
 <script src="index.js"></script>
-
 </body>
 </html>
